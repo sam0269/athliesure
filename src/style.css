@@ -1,0 +1,202 @@
+/* inbuilt - utilities */
+*{margin: 0;padding: 0;box-sizing: border-box;}
+html{font-size: 62.5%;}
+
+/* ++++++++++++++++++++++++++ Google fonts styling   +++++++++++++++++++++ */
+ 
+@import url('https://fonts.googleapis.com/css2?family=Chela+One&family=Montserrat:wght@600&family=Roboto+Slab:wght@500&family=Ubuntu:wght@300&display=swap');
+
+/* ++++++++++++++++++++++++++  navbar content styling    +++++++++++++++++++++ */
+#navbar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-right: 25rem;
+    padding-left: 7rem;
+}
+.navbar-item ul {
+    display: flex;
+    font-family: ubuntu;
+    font-weight: bolder;
+}
+.navbar-item ul li{
+    font-size: 1.4rem;
+    list-style: none;
+    padding: 0 1.3rem;
+}
+.navbar-item ul li a{
+    text-decoration: none;
+}
+.logo img{
+    height: 10rem;
+    width: 15rem;
+}
+
+
+/* ++++++++++++++++++++++++++  banner content styling    +++++++++++++++++++++ */
+#banner-section{
+    display: grid;
+    grid-template-columns: 3fr 4fr;
+    height: 86vh;
+    position: relative;
+}
+#banner-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 86vh;
+    width: 100vw;
+    background-color: rgb(180, 175, 173);
+    z-index: -1;
+    opacity: .2;
+}
+.container{
+    height: 35rem;
+    padding: 2rem 5rem;
+    transform: translateY(25rem);
+}
+h5{
+    font-size: 2.5rem;
+    letter-spacing: .3rem;
+    font-family: 'Roboto Slab', serif;
+}
+h1{
+    font-size: 6rem;
+    letter-spacing: .5rem;
+    font-family: 'Montserrat', sans-serif;
+}
+p{
+    font-size: 2rem;
+    font-family: 'Ubuntu', sans-serif;
+}
+
+.banner-img img{
+    height: 60vh;
+    animation: upward 1s linear infinite;
+    transition: all 4s;
+}
+
+@keyframes upward{
+    from{
+        transform: translateY(0);
+    }
+    to{
+        transform: translateY(1rem);
+    }
+}
+
+
+/* ++++++++++++++++++++++++++  gallery content styling    +++++++++++++++++++++ */
+#gallery-section{
+    display: grid;
+    grid-template-columns: auto auto auto auto auto;
+}
+#gallery-section img{
+    height: 85vh;
+    width: 30rem;
+}
+
+/* ++++++++++++++++++++++++++  binary content styling    +++++++++++++++++++++ */
+#binary-section{
+    background-color: rgb(255, 255, 255);
+    position: relative;
+    height: 80vh;
+    width: 100vw;
+    opacity: .8;
+
+}
+#binary-section::before{
+    content:"";
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 80vh;
+    width: 100vw;
+    background-image: url('../public/gallery/nb423.jpg');
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    z-index: -1;
+}
+.content-box{
+    height: 40rem;
+    width: 60rem;
+    align-items: right;
+    display: inline-block;
+    transform: translate(90rem, 5rem);
+}
+
+/* ++++++++++++++++++++++++++  about content styling    +++++++++++++++++++++ */
+#about-section{
+    height: 60vh;
+    width: 100vw;
+    position: relative;
+    opacity: .8;
+}
+#about-section::before{
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 60vh;
+    background-color: rgb(235, 230, 228);
+    z-index: -1;
+}
+.about-content{
+    text-align: center;
+    height: 17vw;
+    transform: translateY(10rem);
+}
+.ancor{
+    line-height: 5;
+    font-size: 2.5rem;
+    font-family: 'Chela One', cursive;
+}
+
+/* ++++++++++++++++++++++++++  shoe content styling    +++++++++++++++++++++ */
+.shoe-item{
+    padding: 6rem;
+    padding-bottom: 0;
+    width: 90vw;    
+    margin: auto;
+}
+.shoe-item img:hover{
+    transform: scale(1.2);
+    transition: all 1s;
+}
+/* ++++++++++++++++++++++++++  Article content styling    +++++++++++++++++++++ */
+.article-section{
+    display: inline-flex;
+}
+.article-second-content{width: 60vw;}
+.second-item{
+    height: 30rem;
+    text-align: center;
+    padding: 4rem;
+}
+.second-item h1{
+    font-size: 3rem;
+    letter-spacing: normal;
+    line-height: 2;
+}
+.second-item-img img{
+    width: 60vw;
+    height: 70vh;
+}
+.run-gun{
+    height: 35vh;
+    background-color: rgb(214, 200, 212);
+    display: grid;
+    place-items: center;
+}
+.run-gun-item{
+    text-align: center;    
+    height: 30vh;
+    width: 40vw;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    line-height: 2;
+}
